@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando para o WhatsApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    const vendedores = [
+      "https://wa.me/5563984382692", // Raiane
+      "https://wa.me/5563984601246", // Whemeson
+      "https://wa.me/556384687423",  // Ramom
+      "https://wa.me/5563999955550", // Domingos
+      "https://wa.me/5563992578535", // Luciano
+      "https://wa.me/5563992134941", // Clayrton
+      "https://wa.me/5563992903030"  // Gabriel
+    ];
+
+    const random = Math.floor(Math.random() * vendedores.length);
+    window.location.href = vendedores[random];
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      color: #0057FF;
+      font-size: 24px;
+    }
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Aguarde um instante...</h1>
+  <p>Você está sendo redirecionado para um de nossos vendedores no WhatsApp 📲</p>
+</body>
+</html>
